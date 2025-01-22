@@ -1,0 +1,27 @@
+/* Index.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #f4f4f4;
+  font-family: 'Arial', sans-serif;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+p {
+  margin: 0;
+}
