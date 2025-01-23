@@ -1,105 +1,86 @@
-/* App.css */
-
-/* General body styles */
-body {
-  background: url(./assets/images/vapor.jpg) no-repeat center center fixed;
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+  background: linear-gradient(135deg, #300350, #F9AC53, #153CB4);
+  background-size: cover;
+  color: #f5f6fa;
+  overflow: hidden;
 }
 
-/* Header styles */
-header {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000; /* Ensures it stays above other content */
-  padding: 10px 20px;
-  font-size: 1.75rem;
-  text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: #000;
-  background-color: #fff;
-  margin: 0 auto;
-}
-
-/* Folder container styles */
+/* Folder Container */
 .folder-container {
-  margin-top: 80px; /* Adjust based on header height */
-  max-width: 80%;
-  margin: 80px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Folder tabs styles */
+/* Folder Tabs */
 .folder-tabs {
   display: flex;
   justify-content: center;
-  gap: 10px;
-  top: 80px; /* Sticks below the header */
-  z-index: 999; /* Ensures it stays above content */
-  background: #fff;
-  padding: 10px 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
 
-/* Tab styles */
 .tab {
-  padding: 10px 20px;
-  border: 1px solid #ddd;
-  border-radius: 25px;
-  background: #fff;
+  padding: 0.75rem 1.5rem;
   cursor: pointer;
+  border-radius: 5px 5px 0 0;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
   font-weight: bold;
-  transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-}
-
-.tab.active {
-  background: #0078ff;
-  color: #fff;
-  border-color: #0078ff;
+  transition: transform 0.2s, background 0.3s;
 }
 
 .tab:hover {
-  background: #0078ff;
-  color: #fff;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-5px);
 }
 
-/* Section styles */
-#about-me,
-#portfolio,
-#contact {
+.tab.active {
+  background: #1e272e;
+  color: #feca57;
+  transform: translateY(-5px);
+}
+
+/* Folder Content */
+.folder-content {
+  width: 80%;
+  max-width: 1000px;
+  padding: 2rem;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Header */
+header {
+  display: flex;
   text-align: center;
-  padding: 20px;
-  background: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  max-width: 80%;
-  margin: 20px auto;
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
-#resume {
-  text-align: center;
-  padding: 20px;
-  background: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  max-width: 80%;
-  margin: 20px auto;
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-}
-
-#portfolio {
-  background-color: #f9f9f9;
-}
-
-/* Footer styles */
+/* Footer */
 footer {
+  margin-top: 2rem;
   text-align: center;
-  padding: 10px 0;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  color: #fff;
+  color: #ff9ff3;
+  font-size: 0.875rem;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
