@@ -2,10 +2,10 @@
 
 ## Overview
 This is my portforlio, where I will show off my skills.
-This was made using React and 
+This was made using React and Vite, and was deployed using Netlify.
 
 ## Features
-The Page Has four sections. 
+The Page Has four sections:
 1. About Me: This is a brief intro to who I am.
 2. Portfolio: This is where you can see the projects.
 3. Contact: You can contact me for work.
