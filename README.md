@@ -12,4 +12,4 @@ The Page Has four sections.
 4. Resume: You can download a PDF of my resume.
 
 ## Links
-Link to my portfolio
+Link to my portfolio: https://gregorystump.netlify.app/
